@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeonVerse Global</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-light">
+  <header class="top-bar glass">
+    <h1>🌍 NeonVerse Global</h1>
+    <div class="top-controls">
+      <button id="themeToggle" class="btn">Neon Dark</button>
+      <button id="simulateDay" class="btn">Claim Daily Login</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel profile-panel glass">
+      <h2>Interactive Profile</h2>
+      <div class="profile-card" id="profileCard">
+        <div class="banner" id="profileBanner">Neon Pulse Banner</div>
+        <div class="avatar-stack">
+          <div class="aura" id="levelAura"></div>
+          <div class="avatar-frame neon-pulse" id="avatarFrame">
+            <img id="avatarImage" src="https://images.unsplash.com/photo-1542204625-de293a4ee290?auto=format&fit=crop&w=300&q=80" alt="Avatar" />
+          </div>
+          <button id="tapEffect" class="tap-burst">Tap ✨</button>
+        </div>
+        <div class="identity">
+          <h3>Luna Pixel <span class="vip-chip" id="vipBadge">VIP</span></h3>
+          <p id="countryTag">🇯🇵 Japan · Tokyo</p>
+          <p id="moodTag" class="mood">Mood: Electric Joy ⚡</p>
+          <p>Level <span id="userLevel">34</span></p>
+          <div class="coins">🪙 Coins: <strong id="coinCount">5200</strong></div>
+        </div>
+      </div>
+
+      <div class="shop">
+        <h3>Avatar Frame Shop (15 Neon Frames)</h3>
+        <div id="frameGrid" class="frame-grid"></div>
+        <p class="small">VIP users can equip all frames and banners for free. Non-VIP users buy with coins.</p>
+      </div>
+
+      <div class="banner-shop">
+        <h3>VIP Animated Banners</h3>
+        <div id="bannerGrid" class="banner-grid"></div>
+      </div>
+    </section>
+
+    <section class="panel rewards-panel glass">
+      <h2>Joyful Rewards Economy</h2>
+      <ul id="rewardTasks" class="task-list"></ul>
+      <h3>Coin Redemption</h3>
+      <ul>
+        <li>Avatar Frames</li>
+        <li>Profile Decorations & Auras</li>
+        <li>Seasonal Event Access</li>
+      </ul>
+      <p class="small">No animated gift exchanges are included by design.</p>
+
+      <h3>VIP Membership</h3>
+      <div class="vip-pricing">
+        <div>🎁 New users: <strong>2 months free</strong></div>
+        <div>$2 / 4 months</div>
+        <div>$18 / 8 months</div>
+        <div>$50 / 12 months</div>
+      </div>
+      <button id="toggleVip" class="btn">Toggle VIP Mode</button>
+    </section>
+
+    <section class="panel comms-panel glass">
+      <h2>Messaging + Calling</h2>
+      <div class="chat-window">
+        <div class="messages" id="messages"></div>
+        <div class="chat-controls">
+          <input id="chatInput" placeholder="Type a message..." />
+          <button id="sendBtn" class="btn">Send</button>
+        </div>
+      </div>
+      <div class="call-options">
+        <button class="btn">📞 Voice Call (All Users)</button>
+        <button id="videoCallBtn" class="btn">📹 Video Call (VIP)</button>
+        <div class="call-settings">
+          <label><input type="checkbox" checked /> Beauty Filter</label>
+          <label><input type="checkbox" checked /> Blur Background</label>
+          <label><input type="checkbox" checked /> Voice Effects</label>
+        </div>
+      </div>
+
+      <h3>Multiplayer Game Hub</h3>
+      <div class="games">
+        <button class="btn">♟ Chess</button>
+        <button class="btn">🎱 Billiard</button>
+        <button class="btn">🪵 Carrom</button>
+        <button id="vipRoomBtn" class="btn">🦸 VIP Roleplay Rooms</button>
+      </div>
+      <p id="vipRoomNote" class="small">Superhero + anime fantasy rooms available for VIP.</p>
+
+      <h3>Country Leaderboard</h3>
+      <ol id="leaderboard"></ol>
+    </section>
+  </main>
+
+  <section class="panel infra glass">
+    <h2>Platform Backbone</h2>
+    <div class="pill-list">
+      <span>AI-assisted moderation</span>
+      <span>Report/review queues</span>
+      <span>Age & abuse safeguards</span>
+      <span>Encrypted messaging</span>
+      <span>PCI-compliant payments</span>
+      <span>WebSocket real-time services</span>
+      <span>Horizontal autoscaling</span>
+      <span>Regional low-latency relays</span>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
